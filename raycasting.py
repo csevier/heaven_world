@@ -89,7 +89,7 @@ class RayCasting:
                 x_hor %= 1
                 offset = (1 - x_hor) if sin_a > 0 else x_hor
 
-            depth *= math.cos(self.game.player.angle - ray_angle)
+            #depth *= math.cos(self.game.player.angle - ray_angle)
             proj_height = SCREEN_DIST / (depth + 0.0001)
             self.ray_casting_result.append((depth, proj_height, texture, offset))
 
